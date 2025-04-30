@@ -30,6 +30,7 @@
     justify-content: center;
     font-size: 1.5rem;
     margin: 2rem;
+    
 }
 
 .containerNumeri{
@@ -72,15 +73,6 @@
     background-color: rgb(14, 14, 187);
 }
 
-#d-none-one{
-    display: block;
-}
-#d-none-two{
-    display: flex;
-}
-#d-none-three{
-    display: block;
-}
 .startContainer{
     display: flex;
     justify-content: center;
@@ -97,7 +89,18 @@
     border-radius: 5px;
     background-color: red;
     color: white;
+    display: block;
 }
 #start:active{
     background-color: rgb(131, 7, 7);
+}
+
+.d-flex{
+    display: flex;
+}
+.d-none{
+    display: none;
+}
+.d-block{
+    display: block;
 }
