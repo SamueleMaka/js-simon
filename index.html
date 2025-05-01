@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Definisce il set di caratteri e la configurazione di visualizzazione per dispositivi mobili -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Titolo della pagina -->
     <title>Simon Says</title>
+    
+    <!-- Link al foglio di stile CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Contenitore principale della pagina -->
     <div class="container">
+        
+        <!-- Contenitore per il bottone "Start" -->
         <div class="startContainer">
             <button id="start">Start</button>
         </div>
+        
+        <!-- Contenitore del timer e dei numeri random -->
         <div class="timerContainer">
+            <!-- Visualizzazione del timer -->
             <div id="timer">0s</div>
+            
+            <!-- Area dove verranno mostrati i numeri random -->
             <div id="numeri"></div>
         </div>
+
+        <!-- Indicazione per l'utente che deve inserire i numeri ricordati -->
         <p class="indicazione">
             Inserisci tutti i numeri che ricordi, l'ordine non è importante
         </p>
- 
-        <div class=" d-none" id="containerNumeri">
+
+        <!-- Contenitore per i campi di input dove l'utente inserisce i numeri -->
+        <div id="containerNumeri">
             <input type="text" id="num-1">
             <input type="text" id="num-2">
             <input type="text" id="num-3">
             <input type="text" id="num-4">
             <input type="text" id="num-5">
         </div>
-        <div class="pulsante d-none">
+
+        <!-- Contenitore del pulsante per inviare i numeri -->
+        <div class="pulsante">
             <button id="conferma">
                 Invia
             </button>
         </div>
-        <div class="outputContainer d-none">
-            <p id="punteggio">
-                
-            </p>
+
+        <!-- Contenitore per mostrare il punteggio o risultato finale -->
+        <div id="outputContainer">
+            <p id="punteggio"></p>
         </div>
     </div>
+    
+    <!-- Collega il file JavaScript esterno -->
     <script src="js/script.js"></script>
 </body>
 </html>

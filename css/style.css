@@ -1,106 +1,118 @@
+/* Resetta margini e padding per tutti gli elementi */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html, body {
-    height: 100%;
-    font-family: sans-serif;
-    background-color: #fff;
-    color: #000;
-}
-#numeri{
-    margin-top: 2rem;
-}
-.container{
-    width: 80%;
-    margin: 0 auto;
-    height: 100vh;;
 }
 
-.timerContainer{
-    font-size: 3rem;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 2rem;
+/* Impostazioni globali per l'HTML e il body */
+html, body {
+    height: 100%;  /* Occupa l'intera altezza della finestra */
+    font-family: sans-serif;  /* Font di default */
+    background-color: #fff;  /* Colore di sfondo bianco */
+    color: #000;  /* Colore del testo nero */
 }
 
-.indicazione{
-    justify-content: center;
-    font-size: 1.5rem;
-    margin: 2rem;
-    
+/* Stile per la sezione numeri */
+#numeri {
+    margin-top: 2rem;  /* Distanza sopra la sezione numeri */
 }
 
-.containerNumeri{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 80%;
-    margin: 0 auto;
-}
-.containerNumeri > *{
-    width: 10%;
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: 2rem;
-    width: 5rem;
-    padding: 0.5rem;
-    font-size: 1.5rem;
+/* Container principale per il layout */
+.container {
+    width: 80%;  /* Larghezza del contenitore */
+    margin: 0 auto;  /* Centra il contenitore */
+    height: 100vh;  /* Altezza pari a quella della finestra */
 }
 
-.pulsante{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 2rem;    
-}
-#conferma{
-    height: 3rem;
-    font-size: 1.5rem;
-    padding: 0 2rem;
-    border: 0;
-    border-radius: 5px;
-    background-color: rgb(13, 110, 253);
-    color: white;
-}
-#punteggio{
-    text-align: center;
-    font-size: 1.5rem;
-}
-#conferma:active{
-    background-color: rgb(14, 14, 187);
+/* Stile per il container del timer */
+.timerContainer {
+    font-size: 3rem;  /* Dimensione del testo del timer */
+    font-weight: 600;  /* Grassetto */
+    text-align: center;  /* Testo centrato */
+    padding-top: 2rem;  /* Distanza sopra il timer */
 }
 
-.startContainer{
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    margin-top: 2rem;
-    width: 100%;
+/* Stile per l'indicazione di testo */
+.indicazione {
+    text-align: center;  /* Testo centrato */
+    font-size: 1.5rem;  /* Dimensione del testo */
+    margin: 2rem;  /* Distanza sopra e sotto l'indicazione */
 }
 
-#start{
-    height: 3rem;
-    font-size: 1.5rem;
-    padding: 0 2rem;
-    border: 0;
-    border-radius: 5px;
-    background-color: red;
-    color: white;
-    display: block;
-}
-#start:active{
-    background-color: rgb(131, 7, 7);
+/* Container per i numeri da inserire */
+#containerNumeri {
+    display: flex;  /* Usa il flexbox per disporre gli elementi */
+    justify-content: space-around;  /* Distribuisce equamente gli spazi tra gli elementi */
+    align-items: center;  /* Allinea gli elementi verticalmente al centro */
+    width: 80%;  /* Larghezza del container */
+    margin: 0 auto;  /* Centra il contenitore */
 }
 
-.d-flex{
-    display: flex;
+/* Stile per ciascun input dentro il container numeri */
+#containerNumeri > * {
+    width: 10%;  /* Larghezza del singolo elemento */
+    border: 1px solid grey;  /* Bordo grigio */
+    border-radius: 5px;  /* Angoli arrotondati */
+    height: 2rem;  /* Altezza dell'input */
+    width: 5rem;  /* Larghezza dell'input */
+    padding: 0.5rem;  /* Spaziatura interna */
+    font-size: 1.5rem;  /* Dimensione del testo */
 }
-.d-none{
-    display: none;
+
+/* Stile per il pulsante */
+.pulsante {
+    width: 100%;  /* Larghezza completa del container */
+    display: flex;  /* Usa il flexbox */
+    justify-content: center;  /* Allinea il pulsante al centro */
+    padding: 2rem;  /* Distanza interna */
 }
-.d-block{
-    display: block;
+
+/* Stile per il pulsante di conferma */
+#conferma {
+    height: 3rem;  /* Altezza del pulsante */
+    font-size: 1.5rem;  /* Dimensione del testo */
+    padding: 0 2rem;  /* Spaziatura orizzontale interna */
+    border: 0;  /* Rimuove il bordo */
+    border-radius: 5px;  /* Angoli arrotondati */
+    background-color: rgb(13, 110, 253);  /* Colore di sfondo blu */
+    color: white;  /* Colore del testo bianco */
+}
+
+/* Effetto attivo sul pulsante */
+#conferma:active {
+    background-color: rgb(14, 14, 187);  /* Cambia il colore quando il pulsante è cliccato */
+}
+
+/* Stile per il punteggio */
+#punteggio {
+    text-align: center;  /* Testo centrato */
+    font-size: 1.5rem;  /* Dimensione del testo */
+}
+
+/* Container per il pulsante di avvio */
+.startContainer {
+    display: flex;  /* Usa il flexbox */
+    justify-content: center;  /* Centra il pulsante */
+    margin: 0 auto;  /* Centra il container */
+    margin-top: 2rem;  /* Distanza sopra il container */
+    width: 100%;  /* Larghezza completa */
+}
+
+/* Stile per il pulsante di avvio */
+#start {
+    margin-top: 2rem;  /* Distanza sopra il pulsante */
+    height: 3rem;  /* Altezza del pulsante */
+    font-size: 1.5rem;  /* Dimensione del testo */
+    padding: 0 2rem;  /* Spaziatura orizzontale interna */
+    border: 0;  /* Rimuove il bordo */
+    border-radius: 5px;  /* Angoli arrotondati */
+    background-color: red;  /* Colore di sfondo rosso */
+    color: white;  /* Colore del testo bianco */
+    display: block;  /* Mostra il pulsante come un blocco */
+}
+
+/* Effetto attivo sul pulsante di avvio */
+#start:active {
+    background-color: rgb(131, 7, 7);  /* Cambia il colore quando il pulsante è cliccato */
 }
